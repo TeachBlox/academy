@@ -1,22 +1,9 @@
 {
   "hosting": [
     {
-      "target": "landing",
-      "public": "web",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "app",
-      "public": "web",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
+      "target": "academy-teachblox",
+      "public": "build/academy_web",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
   ]
 }

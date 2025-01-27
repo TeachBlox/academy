@@ -23,7 +23,7 @@ jobs:
         run: flutter pub get
       # 4. Build academy landing
       - name: Build Flutter Web
-        run: flutter build web --web-renderer canvaskit --target lib/academy/landing/main.dart --release --output build/academy_landing_web
+        run: flutter build web --web-renderer canvaskit --target lib/academy/main.dart --release --output build/academy_web
       # 5. Deploy through Firebase
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
