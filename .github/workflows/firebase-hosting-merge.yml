@@ -32,4 +32,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TEACHBLOX }}'
           channelId: live
           projectId: teachblox
-          entryPoint: build/academy_landing_web
