@@ -7,14 +7,6 @@ version: 1.0.0+1
 environment:
   sdk: ^3.6.1
 
-scripts:
-  academy_landing_web: flutter run web --web-renderer canvaskit --target lib/academy/landing/main.dart --output
-  academy_app_web: flutter run web --web-renderer canvaskit --target lib/academy/landing/main.dart
-
-  get_deps: flutter pub get
-  build_academy_landing_web: dart pub run get_deps && flutter run web --web-renderer canvaskit --target lib/academy/landing/main.dart --release --output academy_landing
-  build_academy_app_web: dart pub run get_deps && flutter run web --web-renderer canvaskit --target lib/academy/landing/main.dart --release --output academy_app
-
 dependencies:
   flutter:
     sdk: flutter
