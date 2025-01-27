@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "teachblox"
-  }
+  },
+  "targets": {
+    "teachblox": {
+      "hosting": {
+        "academy": [
+          "academy-teachblox"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

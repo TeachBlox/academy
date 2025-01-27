@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "academy-teachblox",
+      "target": "academy",
       "public": "build/academy_web",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
