@@ -1,3 +1,7 @@
 {
-  "companyTitle": "TeachBlox"
+  "companyTitle": "TeachBlox",
+  "link_aboutPlatform": "Платформа",
+  "link_courses": "Курсы",
+  "link_forTeachers": "Учителям",
+  "link_contacts": "Контакты"
 }

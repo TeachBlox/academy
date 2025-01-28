@@ -9,5 +9,6 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
   scaffoldBackgroundColor: kScaffoldBackgroundColor,
   textTheme: TextTheme(
     labelLarge: kLabelLarge.copyWith(color: kTextColor),
+    labelMedium: kLabelMedium.copyWith(color: kTextColor),
   ),
 );

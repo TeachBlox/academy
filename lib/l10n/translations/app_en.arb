@@ -2,5 +2,21 @@
   "companyTitle": "TeachBlox",
   "@companyTitle": {
     "description": "This is title of our company"
+  },
+  "link_aboutPlatform": "About Platform",
+  "@link_aboutPlatform": {
+    "description": "Landing page link to section about platform"
+  },
+  "link_courses": "Courses",
+  "@link_courses": {
+    "description": "Landing page link to section courses"
+  },
+  "link_forTeachers": "For Teachers",
+  "@link_forTeachers": {
+    "description": "Landing page link to section for teachers"
+  },
+  "link_contacts": "Contacts",
+  "@link_contacts": {
+    "description": "Landing page link to section contacts"
   }
 }
