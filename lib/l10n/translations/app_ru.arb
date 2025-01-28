@@ -3,5 +3,7 @@
   "link_aboutPlatform": "Платформа",
   "link_courses": "Курсы",
   "link_forTeachers": "Учителям",
-  "link_contacts": "Контакты"
+  "link_contacts": "Контакты",
+  "languageSelector_en": "en",
+  "languageSelector_ru": "ru"
 }

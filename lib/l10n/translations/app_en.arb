@@ -18,5 +18,13 @@
   "link_contacts": "Contacts",
   "@link_contacts": {
     "description": "Landing page link to section contacts"
+  },
+  "languageSelector_en": "en",
+  "@languageSelector_en": {
+    "description": "English"
+  },
+  "languageSelector_ru": "ru",
+  "@languageSelector_ru": {
+    "description": "Russian"
   }
 }

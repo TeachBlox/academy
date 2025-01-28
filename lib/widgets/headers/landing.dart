@@ -4,6 +4,8 @@ import 'package:teachblox/assets/images.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/widgets/buttons/link.dart';
 
+import '../selectors/language.dart';
+
 const kDesktopHeaderHeight = 87.0;
 
 class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
@@ -49,10 +51,7 @@ class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
               ),
             ],
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [Text('Buttons')],
-          ),
+          LanguageSelector(),
         ],
       ),
     );
