@@ -13,10 +13,21 @@ class LanguageSelector extends StatelessWidget {
     return DropdownMenu<String>(
       initialSelection: languageStore.selectedLanguage,
       requestFocusOnTap: false,
+      width: 70.0,
+      textAlign: TextAlign.center,
+      trailingIcon: Icon(Icons.keyboard_arrow_down),
+      selectedTrailingIcon: Icon(Icons.keyboard_arrow_up),
       inputDecorationTheme: InputDecorationTheme(
         border: InputBorder.none,
         enabledBorder: InputBorder.none,
         focusedBorder: InputBorder.none,
+      ),
+      menuStyle: MenuStyle(
+        shape: WidgetStatePropertyAll<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+        ),
       ),
       onSelected: (String? languageCode) {
         if (languageCode != null) {
@@ -28,6 +39,21 @@ class LanguageSelector extends StatelessWidget {
         return DropdownMenuEntry<String>(
           value: locale.languageCode,
           label: locale.languageCode,
+          style: ButtonStyle(
+            alignment: Alignment.center,
+            backgroundColor: WidgetStateProperty.resolveWith(
+              (states) {
+                Color? color =
+                    languageStore.selectedLanguage == locale.languageCode
+                        ? Color(0xFF222225)
+                        : Theme.of(context).colorScheme.surface;
+                color = states.contains(WidgetState.hovered)
+                    ? Colors.grey[800]
+                    : color;
+                return color;
+              },
+            ),
+          ),
         );
       }).toList(),
     );
