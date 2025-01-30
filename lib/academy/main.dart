@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
-import 'package:teachblox/academy/screens/landing_screen.dart';
+import 'package:teachblox/academy/screens/landing_screen/landing_screen.dart';
 import 'package:teachblox/academy/store/language/language.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/theme/theme.dart';

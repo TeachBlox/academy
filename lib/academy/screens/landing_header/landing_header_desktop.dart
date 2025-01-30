@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:teachblox/academy/screens/landing_header/utils.dart';
 
-import 'package:teachblox/assets/images.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
-import 'package:teachblox/widgets/buttons/link.dart';
-
-import '../selectors/language.dart';
+import 'package:teachblox/widgets/common/company_logo.dart';
+import 'package:teachblox/widgets/selectors/language_selector/language_selelctor.dart';
 
 const kDesktopHeaderHeight = 87.0;
 
-class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
-  const LandingHeader({super.key});
+class LandingHeaderDesktop extends StatelessWidget
+    implements PreferredSizeWidget {
+  const LandingHeaderDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,33 +24,8 @@ class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Padding(
-                padding: EdgeInsets.only(right: 8.0),
-                child: SvgImage.logo,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 32.0),
-                child: Text(
-                  getLocale(context).companyTitle,
-                  style: Theme.of(context).textTheme.labelLarge,
-                ),
-              ),
-              Link(
-                onPressed: () => print('!'),
-                text: locale.link_aboutPlatform,
-              ),
-              Link(
-                onPressed: () => print('!'),
-                text: locale.link_courses,
-              ),
-              Link(
-                onPressed: () => print('!'),
-                text: locale.link_forTeachers,
-              ),
-              Link(
-                onPressed: () => print('!'),
-                text: locale.link_contacts,
-              ),
+              CompanyLogo(),
+              ...getLandingLinkList(locale),
             ],
           ),
           Row(

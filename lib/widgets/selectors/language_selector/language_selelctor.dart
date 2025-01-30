@@ -1,8 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 import 'package:teachblox/academy/store/language/language.dart';
+import 'package:teachblox/constants.dart';
 import 'package:teachblox/l10n/locals.dart';
 
 class LanguageSelector extends StatelessWidget {
@@ -10,10 +9,13 @@ class LanguageSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width =
+        MediaQuery.sizeOf(context).width < kTabletWidth ? 328.0 : 70.0;
+
     return DropdownMenu<String>(
       initialSelection: languageStore.selectedLanguage,
       requestFocusOnTap: false,
-      width: 70.0,
+      width: width,
       textAlign: TextAlign.center,
       trailingIcon: Icon(Icons.keyboard_arrow_down),
       selectedTrailingIcon: Icon(Icons.keyboard_arrow_up),

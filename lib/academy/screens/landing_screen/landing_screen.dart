@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teachblox/widgets/headers/landing.dart';
+import 'package:teachblox/academy/screens/landing_header/landing_header.dart';
+import 'package:teachblox/academy/screens/landing_header/landing_header_drawer.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -8,6 +9,7 @@ class LandingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: LandingHeader(),
+      endDrawer: LandingHeaderDrawer(),
     );
   }
 }

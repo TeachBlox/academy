@@ -6,28 +6,26 @@ class Button extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
   final ButtonVariant variant;
+  final TextStyle textStyle;
+  final EdgeInsetsGeometry padding;
 
   const Button({
     super.key,
     required this.onPressed,
     required this.text,
     this.variant = ButtonVariant.primary,
+    this.textStyle = const TextStyle(),
+    this.padding = const EdgeInsets.symmetric(
+      vertical: kPaddingVertical, horizontal: kPaddingHorizontal,
+    ),
   });
 
-  Color getTextColor(BuildContext context) {
-    final primaryColor = Theme.of(context).primaryColor;
-    switch (variant) {
-      case ButtonVariant.primary:
-        return Colors.white;
-      case ButtonVariant.ghost:
-        return primaryColor;
-    }
-  }
-
   Widget _buildPrimaryButton(BuildContext context) {
-    final primaryColor = Theme.of(context).primaryColor;
+    final primaryColor = Theme
+        .of(context)
+        .primaryColor;
 
-    return Ink(
+    return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0xFFFE604D), Color(0xFFFF9E04)],
@@ -39,7 +37,7 @@ class Button extends StatelessWidget {
       child: TextButton(
         onPressed: onPressed,
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: kPaddingVertical, horizontal: kPaddingHorizontal),
+          padding: padding,
           child: Text(
             text,
             style: kLabelMedium.copyWith(color: primaryColor),
@@ -50,9 +48,11 @@ class Button extends StatelessWidget {
   }
 
   Widget _buildGhostButton(BuildContext context) {
-    final primaryColor = Theme.of(context).primaryColor;
+    final primaryColor = Theme
+        .of(context)
+        .primaryColor;
 
-    return Ink(
+    return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
         border: Border.all(color: primaryColor),
@@ -61,7 +61,7 @@ class Button extends StatelessWidget {
         onPressed: onPressed,
         style: ButtonStyle(),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: kPaddingVertical, horizontal: kPaddingHorizontal),
+          padding: padding,
           child: Text(
             text,
             style: kLabelMedium.copyWith(color: primaryColor),

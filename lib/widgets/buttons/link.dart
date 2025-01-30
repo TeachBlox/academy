@@ -1,16 +1,27 @@
 import 'package:flutter/material.dart';
 
 class Link extends StatelessWidget {
-  final VoidCallback onPressed;
+  final String link;
   final String text;
+  final EdgeInsetsGeometry padding;
 
-  const Link({super.key, required this.onPressed, required this.text});
+  const Link({
+    super.key,
+    required this.link,
+    required this.text,
+    this.padding = EdgeInsets.zero,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: onPressed,
-      child: Text(text, style: Theme.of(context).textTheme.labelMedium),
+    return Padding(
+      padding: padding,
+      child: SizedBox(
+        child: TextButton(
+          onPressed: () => print(link),
+          child: Text(text, style: Theme.of(context).textTheme.labelMedium),
+        ),
+      ),
     );
   }
 }
