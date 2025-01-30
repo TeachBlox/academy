@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:teachblox/constants.dart';
 
-class Adaptive extends StatelessWidget {
+class AdaptiveScreen extends StatelessWidget {
   final Widget mobile;
   final Widget tablet;
   final Widget desktop;
 
-  const Adaptive({
+  const AdaptiveScreen({
     super.key,
     required this.mobile,
     required this.tablet,
