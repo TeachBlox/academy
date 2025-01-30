@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:teachblox/assets/images.dart';
 import 'package:teachblox/l10n/locals.dart';
+import 'package:teachblox/widgets/buttons/button.dart';
 import 'package:teachblox/widgets/buttons/link.dart';
 
 import '../selectors/language.dart';
@@ -18,6 +19,7 @@ class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
       padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 84.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -51,7 +53,19 @@ class LandingHeader extends StatelessWidget implements PreferredSizeWidget {
               ),
             ],
           ),
-          LanguageSelector(),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              LanguageSelector(),
+              Button(
+                variant: ButtonVariant.ghost,
+                onPressed: () {},
+                text: locale.login,
+              ),
+              SizedBox(width: 8.0),
+              Button(onPressed: () {}, text: locale.register),
+            ],
+          )
         ],
       ),
     );

@@ -11,9 +11,6 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
   textTheme: TextTheme(
     labelLarge: kLabelLarge.copyWith(color: kTextColor),
     labelMedium: kLabelMedium.copyWith(color: kTextColor),
-    // labelSmall: kLabelMedium.copyWith(color: kTextColor),
-    // bodySmall: kLabelMedium.copyWith(color: kTextColor),
-    // bodyMedium: kLabelMedium.copyWith(color: kTextColor),
     bodyLarge: kLabelMedium.copyWith(color: kTextColor),
   ),
 );

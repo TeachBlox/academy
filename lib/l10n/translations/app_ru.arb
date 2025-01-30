@@ -5,5 +5,8 @@
   "link_forTeachers": "Учителям",
   "link_contacts": "Контакты",
   "languageSelector_en": "en",
-  "languageSelector_ru": "ru"
+  "languageSelector_ru": "ru",
+  "login": "Войти",
+  "register": "Регистрация",
+  "logout": "Выйти"
 }

@@ -26,5 +26,17 @@
   "languageSelector_ru": "ru",
   "@languageSelector_ru": {
     "description": "Russian"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button"
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Register button"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button"
   }
 }
