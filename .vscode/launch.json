@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TeachBlox Academy",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/academy/main.dart",
+      "deviceId": "chrome"
+    },
+    {
+      "name": "TeachBlox Academy (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "TeachBlox Academy (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
