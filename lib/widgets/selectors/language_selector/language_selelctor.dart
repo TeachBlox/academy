@@ -10,7 +10,7 @@ class LanguageSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width =
-        MediaQuery.sizeOf(context).width < kTabletWidth ? 328.0 : 70.0;
+        MediaQuery.sizeOf(context).width < kTabletWidth ? 328.0 : 120.0;
 
     return DropdownMenu<String>(
       initialSelection: languageStore.selectedLanguage,
@@ -40,7 +40,8 @@ class LanguageSelector extends StatelessWidget {
           kSupportedLocales.map<DropdownMenuEntry<String>>((Locale locale) {
         return DropdownMenuEntry<String>(
           value: locale.languageCode,
-          label: locale.languageCode,
+          label:
+              ApplicationLanguages[locale.languageCode] ?? locale.languageCode,
           style: ButtonStyle(
             alignment: Alignment.center,
             backgroundColor: WidgetStateProperty.resolveWith(

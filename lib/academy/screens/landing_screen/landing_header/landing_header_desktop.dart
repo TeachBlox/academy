@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teachblox/academy/screens/landing_header/utils.dart';
+import 'package:teachblox/academy/screens/landing_screen/landing_header/utils.dart';
 
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
