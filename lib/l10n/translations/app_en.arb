@@ -38,5 +38,29 @@
   "logout": "Logout",
   "@logout": {
     "description": "Logout button"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Get Started button"
+  },
+  "landingScreen_title": "Learn your way with",
+  "@landingScreen_title": {
+    "description": "Landing page title"
+  },
+  "landingScreen_titleDescription":"Start with introductory modules and choose your specialization in Web3 and programming",
+  "@landingScreen_titleDescription": {
+    "description": "Landing page title description"
+  },
+  "landingScreen_statistic_developers": "of developers worldwide work in Web3 today",
+  "@landingScreen_statistic_developers": {
+    "description": "Landing page statistic developers"
+  },
+  "landingScreen_statistic_growth": "is the annual growth rate of the Web3 market",
+  "@landingScreen_statistic_growth": {
+    "description": "Landing page statistic growth"
+  },
+  "landingScreen_statistic_salary": "higher salaries are earned by Web3 developers",
+  "@landingScreen_statistic_salary": {
+    "description": "Landing page statistic salary"
   }
 }

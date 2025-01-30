@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teachblox/theme/colors.dart';
 
 import '../../theme/text.dart';
 
@@ -8,27 +9,28 @@ class Button extends StatelessWidget {
   final ButtonVariant variant;
   final TextStyle textStyle;
   final EdgeInsetsGeometry padding;
+  final Widget? leading;
 
   const Button({
     super.key,
     required this.onPressed,
     required this.text,
+    this.leading,
     this.variant = ButtonVariant.primary,
     this.textStyle = const TextStyle(),
     this.padding = const EdgeInsets.symmetric(
-      vertical: kPaddingVertical, horizontal: kPaddingHorizontal,
+      vertical: kPaddingVertical,
+      horizontal: kPaddingHorizontal,
     ),
   });
 
   Widget _buildPrimaryButton(BuildContext context) {
-    final primaryColor = Theme
-        .of(context)
-        .primaryColor;
+    final primaryColor = Theme.of(context).primaryColor;
 
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFFFE604D), Color(0xFFFF9E04)],
+          colors: linearGradientColors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -38,9 +40,15 @@ class Button extends StatelessWidget {
         onPressed: onPressed,
         child: Padding(
           padding: padding,
-          child: Text(
-            text,
-            style: kLabelMedium.copyWith(color: primaryColor),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              leading ?? const SizedBox(),
+              Text(
+                text,
+                style: kLabelMedium.copyWith(color: primaryColor),
+              ),
+            ],
           ),
         ),
       ),
@@ -48,9 +56,7 @@ class Button extends StatelessWidget {
   }
 
   Widget _buildGhostButton(BuildContext context) {
-    final primaryColor = Theme
-        .of(context)
-        .primaryColor;
+    final primaryColor = Theme.of(context).primaryColor;
 
     return Container(
       decoration: BoxDecoration(
@@ -88,4 +94,4 @@ enum ButtonVariant {
 }
 
 const kPaddingHorizontal = 16.0;
-const kPaddingVertical = 8.0;
+const kPaddingVertical = 12.0;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teachblox/assets/images.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:teachblox/assets/svg_image.dart';
 import 'package:teachblox/l10n/locals.dart';
 
 class CompanyLogo extends StatelessWidget {
@@ -11,7 +12,7 @@ class CompanyLogo extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.only(right: 8.0),
-          child: SvgImage.logo,
+          child: SvgPicture.asset(SvgImage.companyLogo),
         ),
         Padding(
           padding: const EdgeInsets.only(right: 32.0),
