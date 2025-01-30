@@ -2,5 +2,41 @@
   "companyTitle": "TeachBlox",
   "@companyTitle": {
     "description": "This is title of our company"
+  },
+  "link_aboutPlatform": "About Platform",
+  "@link_aboutPlatform": {
+    "description": "Landing page link to section about platform"
+  },
+  "link_courses": "Courses",
+  "@link_courses": {
+    "description": "Landing page link to section courses"
+  },
+  "link_forTeachers": "For Teachers",
+  "@link_forTeachers": {
+    "description": "Landing page link to section for teachers"
+  },
+  "link_contacts": "Contacts",
+  "@link_contacts": {
+    "description": "Landing page link to section contacts"
+  },
+  "languageSelector_en": "en",
+  "@languageSelector_en": {
+    "description": "English"
+  },
+  "languageSelector_ru": "ru",
+  "@languageSelector_ru": {
+    "description": "Russian"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button"
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Register button"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button"
   }
 }
