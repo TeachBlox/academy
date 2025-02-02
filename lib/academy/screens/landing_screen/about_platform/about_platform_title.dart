@@ -4,6 +4,7 @@ import 'package:teachblox/assets/svg_image.dart';
 import 'package:teachblox/constants.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/theme/colors.dart';
+import 'package:teachblox/utils.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
 
 class AboutPlatformTitle extends StatelessWidget {
@@ -30,20 +31,20 @@ class AboutPlatformTitle extends StatelessWidget {
             children: [
               TextSpan(
                 text: '${locale.landingScreen_title} ',
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: getHeadlineLarge(context),
               ),
               TextSpan(
                 text: locale.companyTitle,
-                style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                      foreground: Paint()
-                        ..shader = LinearGradient(
-                          colors: linearGradientColors,
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ).createShader(
-                          Rect.fromLTWH(0, 0, 600, 50),
-                        ),
+                style: getHeadlineLarge(context)?.copyWith(
+                  foreground: Paint()
+                    ..shader = LinearGradient(
+                      colors: linearGradientColors,
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ).createShader(
+                      Rect.fromLTWH(0, 0, 600, 50),
                     ),
+                ),
               ),
             ],
           ),

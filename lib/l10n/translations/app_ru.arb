@@ -8,5 +8,11 @@
   "languageSelector_ru": "ru",
   "login": "Войти",
   "register": "Регистрация",
-  "logout": "Выйти"
+  "logout": "Выйти",
+  "getStarted": "Начать",
+  "landingScreen_title": "Учись как тебе удобно с",
+  "landingScreen_titleDescription": "Начни с вводных модулей и выбери свою специализацию в Web3 и программировании",
+  "landingScreen_statistic_developers": "разработчиков по всему миру работают в Web3 сегодня",
+  "landingScreen_statistic_growth": "ежегодный темп роста рынка Web3",
+  "landingScreen_statistic_salary": "выше доходы у Web3 разработчиков"
 }
