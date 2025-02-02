@@ -53,7 +53,7 @@ class AboutPlatformTitle extends StatelessWidget {
           padding: const EdgeInsets.only(top: 16.0),
           child: Text(
             locale.landingScreen_titleDescription,
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: getBodyMedium(context),
           ),
         ),
         SizedBox(height: 24.0),

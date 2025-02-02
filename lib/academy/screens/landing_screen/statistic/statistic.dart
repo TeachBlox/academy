@@ -15,9 +15,25 @@ class Statistic extends StatelessWidget {
         title: '25%-50%',
         description: locale.landingScreen_statistic_developers,
       ),
+      SizedBox(
+        height: getAdaptiveValue(
+          context,
+          mobile: 32.0,
+          tablet: 0.0,
+          desktop: 0.0,
+        ),
+      ),
       StatisticBlock(
         title: '1%',
         description: locale.landingScreen_statistic_growth,
+      ),
+      SizedBox(
+        height: getAdaptiveValue(
+          context,
+          mobile: 32.0,
+          tablet: 0.0,
+          desktop: 0.0,
+        ),
       ),
       StatisticBlock(
         title: '35%',
@@ -27,7 +43,14 @@ class Statistic extends StatelessWidget {
 
     return AdaptivePadding(
       child: Padding(
-        padding: const EdgeInsets.only(top: 32.0),
+        padding: EdgeInsets.only(
+          top: getAdaptiveValue(
+            context,
+            mobile: 100.0,
+            tablet: 150.0,
+            desktop: 32.0,
+          ),
+        ),
         child: getAdaptiveValue(
           context,
           mobile: Column(

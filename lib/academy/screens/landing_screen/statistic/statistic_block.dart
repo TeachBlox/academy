@@ -14,8 +14,6 @@ class StatisticBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-
     return SizedBox(
       width: getAdaptiveValue(
         context,
@@ -48,7 +46,7 @@ class StatisticBlock extends StatelessWidget {
               tablet: TextAlign.start,
               desktop: TextAlign.center,
             ),
-            style: textTheme.displayMedium,
+            style: getDisplayMedium(context),
           ),
         ],
       ),
