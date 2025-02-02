@@ -1,4 +1,4 @@
-const kMobileWidth = 600;
+const kMobileWidth = 720;
 const kTabletWidth = 1200;
 
 const kMobileScreenHorizontalPadding = 16.0;

@@ -73,7 +73,7 @@ class LandingHeaderDrawer extends StatelessWidget {
                   ...getLandingLinkList(locale).map(
                     (link) {
                       return Padding(
-                        padding: const EdgeInsets.only(bottom: 32.0),
+                        padding: const EdgeInsets.only(bottom: 12.0),
                         child: Link(
                           link: link.link,
                           text: link.text,

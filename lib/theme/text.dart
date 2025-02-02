@@ -7,6 +7,12 @@ final kHeadlineLarge = GoogleFonts.poppins(
   height: 1.2,
 );
 
+final kHeadlineMedium = GoogleFonts.poppins(
+  fontWeight: FontWeight.w600,
+  fontSize: 40.0,
+  height: 1.2,
+);
+
 final kLabelLarge = GoogleFonts.robotoMono(
   fontWeight: FontWeight.bold,
   fontSize: 17.0,
@@ -21,5 +27,11 @@ final kLabelMedium = GoogleFonts.poppins(
 final kBodyMedium = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   fontSize: 24.0,
+  height: 1.4,
+);
+
+final kDisplayMedium = GoogleFonts.poppins(
+  fontWeight: FontWeight.w400,
+  fontSize: 18.0,
   height: 1.4,
 );
