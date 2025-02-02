@@ -25,5 +25,16 @@
   "landingScreen_howItWorks_step3_title": "Practice",
   "landingScreen_howItWork_step3_description": "Complete tasks, earn rewards, and gain certificates",
   "landingScreen_howItWorks_step4_title": "Career",
-  "landingScreen_howItWorks_step4_description": "Build your career as a Web3 developer with TeachBlox"
+  "landingScreen_howItWorks_step4_description": "Build your career as a Web3 developer with TeachBlox",
+  "landingScreen_why_choose_us_title": "Why choose TeachBlox?",
+  "landingScreen_why_choose_us_subtitle": "Why we stand out",
+  "landingScreen_why_choose_us_description": "Discover personalized learning, AI-powered feedback, blockchain certification, and gamified experiences",
+  "landingScreen_why_choose_us_block1_title": "Custom Learning Path",
+  "landingScreen_why_choose_us_block1_description": "Choose your path with a tree-based course structure",
+  "landingScreen_why_choose_us_block2_title": "AI Assessment",
+  "landingScreen_why_choose_us_block2_description": "Choose your path with a tree-based course structure",
+  "landingScreen_why_choose_us_block3_title": "Digital Certification",
+  "landingScreen_why_choose_us_block3_description": "Earn certificates verified securely on blockchain",
+  "landingScreen_why_choose_us_block4_title": "Gamification",
+  "landingScreen_why_choose_us_block4_description": "Compete, earn badges, and collect TBT tokens"
 }

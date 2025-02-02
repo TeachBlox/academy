@@ -25,5 +25,16 @@
   "landingScreen_howItWorks_step3_title": "Практика",
   "landingScreen_howItWork_step3_description": "Выполняй задания, получай награды и сертификаты",
   "landingScreen_howItWorks_step4_title": "Карьера",
-  "landingScreen_howItWorks_step4_description": "Строй карьеру Web3-разработчика вместе с TeachBlox"
+  "landingScreen_howItWorks_step4_description": "Строй карьеру Web3-разработчика вместе с TeachBlox",
+  "landingScreen_why_choose_us_title": "Почему выбирают TeachBlox?",
+  "landingScreen_why_choose_us_subtitle": "Что нас выделяет",
+  "landingScreen_why_choose_us_description": "Персонализированное обучение, AI-оценка, сертификация на блокчейне и геймификация",
+  "landingScreen_why_choose_us_block1_title": "Индивидуальная траектория обучения",
+  "landingScreen_why_choose_us_block1_description": "Выбирайте свой путь в древовидной структуре курсов",
+  "landingScreen_why_choose_us_block2_title": "AI-оценка",
+  "landingScreen_why_choose_us_block2_description": "Искусственный интеллект анализирует ваши работы и даёт обратную связь",
+  "landingScreen_why_choose_us_block3_title": "Цифровая сертификация",
+  "landingScreen_why_choose_us_block3_description": "Получайте сертификаты, надёжно подтверждённые на блокчейне",
+  "landingScreen_why_choose_us_block4_title": "Геймификация",
+  "landingScreen_why_choose_us_block4_description": "Соревнуйтесь, зарабатывайте достижения и зарабатывайте токены TBT"
 }
