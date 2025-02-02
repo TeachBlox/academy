@@ -33,6 +33,32 @@ TextStyle? getHeadlineMedium(BuildContext context) {
   }
 }
 
+TextStyle? getBodyMedium(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.bodyMedium;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.bodyMedium;
+  } else {
+    return textTheme.bodyMedium;
+  }
+}
+
+TextStyle? getDisplayMedium(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.displayMedium;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.displayMedium;
+  } else {
+    return textTheme.displayMedium;
+  }
+}
+
 T getAdaptiveValue<T>(
   BuildContext context, {
   required T mobile,

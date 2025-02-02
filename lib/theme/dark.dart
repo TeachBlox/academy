@@ -12,6 +12,7 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
   textTheme: TextTheme(
     headlineLarge: kHeadlineLarge.copyWith(color: kTextColor),
     headlineMedium: kHeadlineMedium.copyWith(color: kTextColor),
+    headlineSmall: kHeadlineSmall.copyWith(color: kTextColor),
     labelLarge: kLabelLarge.copyWith(color: kTextColor),
     labelMedium: kLabelMedium.copyWith(color: kTextColor),
     bodyLarge: kLabelMedium.copyWith(color: kTextColor),
