@@ -16,7 +16,7 @@ class Statistic extends StatelessWidget {
         description: locale.landingScreen_statistic_developers,
       ),
       StatisticBlock(
-        title: '1%-2%',
+        title: '1%',
         description: locale.landingScreen_statistic_growth,
       ),
       StatisticBlock(

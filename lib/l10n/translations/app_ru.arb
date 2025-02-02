@@ -14,5 +14,16 @@
   "landingScreen_titleDescription": "Начни с вводных модулей и выбери свою специализацию в Web3 и программировании",
   "landingScreen_statistic_developers": "разработчиков по всему миру работают в Web3 сегодня",
   "landingScreen_statistic_growth": "ежегодный темп роста рынка Web3",
-  "landingScreen_statistic_salary": "выше доходы у Web3 разработчиков"
+  "landingScreen_statistic_salary": "выше доходы у Web3 разработчиков",
+  "landingScreen_howItWorks_title": "Как это работает",
+  "landingScreen_howItWorks_subtitle": "4 простых шага для старта",
+  "landingScreen_howItWorks_description": "Учись, зарабатывай и развивайся, шаг за шагом осваивая Web3",
+  "landingScreen_howItWorks_step1_title": "Старт",
+  "landingScreen_howItWorks_step1_description": "Зарегистрируйся и начни с вводных модулей",
+  "landingScreen_howItWorks_step2_title": "Обучение",
+  "landingScreen_howItWorks_step2_description": "Выбери свой путь обучения в древовидной структуре",
+  "landingScreen_howItWorks_step3_title": "Практика",
+  "landingScreen_howItWork_step3_description": "Выполняй задания, получай награды и сертификаты",
+  "landingScreen_howItWorks_step4_title": "Карьера",
+  "landingScreen_howItWorks_step4_description": "Строй карьеру Web3-разработчика вместе с TeachBlox"
 }
