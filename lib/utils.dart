@@ -59,6 +59,16 @@ TextStyle? getDisplayMedium(BuildContext context) {
   }
 }
 
+double? getButtonWidth(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+
+  if (screenWidth < kMobileWidth) {
+    return double.infinity;
+  }
+
+  return null;
+}
+
 T getAdaptiveValue<T>(
   BuildContext context, {
   required T mobile,
