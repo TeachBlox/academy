@@ -36,6 +36,12 @@ final kBodyMedium = GoogleFonts.poppins(
   height: 1.4,
 );
 
+final kDisplayLarge = GoogleFonts.poppins(
+  fontWeight: FontWeight.w600,
+  fontSize: 20.0,
+  height: 1.4,
+);
+
 final kDisplayMedium = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   fontSize: 18.0,

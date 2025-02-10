@@ -33,6 +33,19 @@ TextStyle? getHeadlineMedium(BuildContext context) {
   }
 }
 
+TextStyle? getHeadlineSmall(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.headlineSmall;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.headlineSmall;
+  } else {
+    return textTheme.headlineSmall;
+  }
+}
+
 TextStyle? getBodyMedium(BuildContext context) {
   final screenWidth = MediaQuery.sizeOf(context).width;
   final textTheme = Theme.of(context).textTheme;
@@ -43,6 +56,19 @@ TextStyle? getBodyMedium(BuildContext context) {
     return textTheme.bodyMedium;
   } else {
     return textTheme.bodyMedium;
+  }
+}
+
+TextStyle? getDisplayLarge(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.displayLarge;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.displayLarge;
+  } else {
+    return textTheme.displayLarge;
   }
 }
 
