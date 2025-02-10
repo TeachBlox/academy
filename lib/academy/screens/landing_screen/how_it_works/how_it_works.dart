@@ -33,10 +33,7 @@ class HowItWorks extends StatelessWidget {
                 bottom: 12.0),
             child: Text(
               locale.landingScreen_howItWorks_title.toUpperCase(),
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall
-                  ?.copyWith(color: kMainOrange),
+              style: getHeadlineSmall(context)?.copyWith(color: kMainOrange),
             ),
           ),
           Padding(

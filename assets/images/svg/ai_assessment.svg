@@ -1,0 +1,25 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer_2" clip-path="url(#clip0_147_12187)">
+<g id="Icon">
+<g id="Anguilla">
+<g id="Group">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M16.0962 21.5351H19.279L17.6782 17.7937L16.0962 21.5351Z" fill="url(#paint0_linear_147_12187)"/>
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M32.1875 0H7.8125C3.49766 0 0 3.49766 0 7.8125V32.1875C0 36.5023 3.49766 40 7.8125 40H32.1875C36.5023 40 40 36.5023 40 32.1875V7.8125C40 3.49766 36.5023 0 32.1875 0ZM22.3703 26.5617C21.7367 26.5617 21.2531 26.2086 21.0305 25.6688L20.2102 23.7328H15.1656L14.3469 25.6688C14.1227 26.2086 13.6211 26.5617 13.0055 26.5617C12.243 26.5617 11.6469 25.9859 11.6469 25.2961C11.6469 25.0172 11.7211 24.7203 11.8336 24.4961L16.3188 14.4062C16.6359 13.6984 17.0648 13.3633 17.6781 13.3633C18.2914 13.3633 18.7391 13.6984 19.0375 14.4062L23.543 24.4961C23.6539 24.7203 23.7281 25.0172 23.7281 25.2961C23.7281 25.9859 23.132 26.5617 22.3695 26.5617H22.3703ZM28.3539 25.2031C28.3539 25.9656 27.7023 26.6375 26.9398 26.6375C26.1773 26.6375 25.5055 25.9656 25.5055 25.2031V14.8328C25.5055 14.0703 26.157 13.4 26.9398 13.4C27.7227 13.4 28.3539 14.0703 28.3539 14.8328V25.2031Z" fill="url(#paint1_linear_147_12187)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_147_12187" x1="19.279" y1="19.6644" x2="16.0962" y2="19.6644" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE604D"/>
+<stop offset="0.9999" stop-color="#FF9E04"/>
+</linearGradient>
+<linearGradient id="paint1_linear_147_12187" x1="40" y1="20" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE604D"/>
+<stop offset="0.9999" stop-color="#FF9E04"/>
+</linearGradient>
+<clipPath id="clip0_147_12187">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,110 +1,40 @@
 {
   "companyTitle": "TeachBlox",
-  "@companyTitle": {
-    "description": "This is title of our company"
-  },
   "link_aboutPlatform": "About Platform",
-  "@link_aboutPlatform": {
-    "description": "Landing page link to section about platform"
-  },
   "link_courses": "Courses",
-  "@link_courses": {
-    "description": "Landing page link to section courses"
-  },
   "link_forTeachers": "For Teachers",
-  "@link_forTeachers": {
-    "description": "Landing page link to section for teachers"
-  },
   "link_contacts": "Contacts",
-  "@link_contacts": {
-    "description": "Landing page link to section contacts"
-  },
   "languageSelector_en": "en",
-  "@languageSelector_en": {
-    "description": "English"
-  },
   "languageSelector_ru": "ru",
-  "@languageSelector_ru": {
-    "description": "Russian"
-  },
   "login": "Login",
-  "@login": {
-    "description": "Login button"
-  },
   "register": "Register",
-  "@register": {
-    "description": "Register button"
-  },
   "logout": "Logout",
-  "@logout": {
-    "description": "Logout button"
-  },
   "getStarted": "Get Started",
-  "@getStarted": {
-    "description": "Get Started button"
-  },
   "landingScreen_title": "Learn your way with",
-  "@landingScreen_title": {
-    "description": "Landing page title"
-  },
   "landingScreen_titleDescription": "Start with introductory modules and choose your specialization in Web3 and programming",
-  "@landingScreen_titleDescription": {
-    "description": "Landing page title description"
-  },
   "landingScreen_statistic_developers": "of developers worldwide work in Web3 today",
-  "@landingScreen_statistic_developers": {
-    "description": "Landing page statistic developers"
-  },
   "landingScreen_statistic_growth": "is the annual growth rate of the Web3 market",
-  "@landingScreen_statistic_growth": {
-    "description": "Landing page statistic growth"
-  },
   "landingScreen_statistic_salary": "higher salaries are earned by Web3 developers",
-  "@landingScreen_statistic_salary": {
-    "description": "Landing page statistic salary"
-  },
   "landingScreen_howItWorks_title": "How it works",
-  "@landingScreen_howItWorks_title": {
-    "description": "How it works title"
-  },
   "landingScreen_howItWorks_subtitle": "4 simple steps to start",
-  "@landingScreen_howItWorks_subtitle": {
-    "description": "How it works subtitle"
-  },
   "landingScreen_howItWorks_description": "Learn, earn, and grow with a step-by-step journey to Web3 success",
-  "@landingScreen_howItWorks_description": {
-    "description": "How it works description"
-  },
   "landingScreen_howItWorks_step1_title": "Start",
-  "@landingScreen_howItWorks_step1_title": {
-    "description": "How it works step 1 title"
-  },
   "landingScreen_howItWorks_step1_description": "Sign up and start with introductory modules",
-  "@landingScreen_howItWorks_step1_description": {
-    "description": "How it works step 1 description"
-  },
   "landingScreen_howItWorks_step2_title": "Learning",
-  "@landingScreen_howItWorks_step2_title": {
-    "description": "How it works step 2 title"
-  },
   "landingScreen_howItWorks_step2_description": "Choose your learning path through a tree-like structure",
-  "@landingScreen_howItWorks_step2_description": {
-    "description": "How it works step 2 description"
-  },
   "landingScreen_howItWorks_step3_title": "Practice",
-  "@landingScreen_howItWorks_step3_title": {
-    "description": "How it works step 3 title"
-  },
   "landingScreen_howItWork_step3_description": "Complete tasks, earn rewards, and gain certificates",
-  "@landingScreen_howItWork_step3_description": {
-    "description": "How it works step 3 description"
-  },
   "landingScreen_howItWorks_step4_title": "Career",
-  "@landingScreen_howItWorks_step4_title": {
-    "description": "How it works step 4 title"
-  },
   "landingScreen_howItWorks_step4_description": "Build your career as a Web3 developer with TeachBlox",
-  "@landingScreen_howItWorks_step4_description": {
-    "description": "How it works step 4 description"
-  }
+  "landingScreen_why_choose_us_title": "Why choose TeachBlox?",
+  "landingScreen_why_choose_us_subtitle": "Why we stand out",
+  "landingScreen_why_choose_us_description": "Discover personalized learning, AI-powered feedback, blockchain certification, and gamified experiences",
+  "landingScreen_why_choose_us_block1_title": "Custom Learning Path",
+  "landingScreen_why_choose_us_block1_description": "Choose your path with a tree-based course structure",
+  "landingScreen_why_choose_us_block2_title": "AI Assessment",
+  "landingScreen_why_choose_us_block2_description": "Choose your path with a tree-based course structure",
+  "landingScreen_why_choose_us_block3_title": "Digital Certification",
+  "landingScreen_why_choose_us_block3_description": "Earn certificates verified securely on blockchain",
+  "landingScreen_why_choose_us_block4_title": "Gamification",
+  "landingScreen_why_choose_us_block4_description": "Compete, earn badges, and collect TBT tokens"
 }
