@@ -23,7 +23,12 @@ class WhyChooseUsTablet extends StatelessWidget {
             width: double.infinity,
             child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: getAdaptiveValue(context, mobile: 1, tablet: 2, desktop: 2),
+                crossAxisCount: getAdaptiveValue(
+                  context,
+                  mobile: 1,
+                  tablet: 2,
+                  desktop: 2,
+                ),
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
                 mainAxisExtent: 192.0,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:teachblox/academy/routing/router.dart';
 
-import 'package:teachblox/academy/screens/landing_screen/landing_screen.dart';
 import 'package:teachblox/academy/store/language/language.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/theme/theme.dart';
@@ -16,13 +16,13 @@ class LandingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Observer(
-      builder: (_) => MaterialApp(
+      builder: (_) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: kLocalizationsDelegates,
         supportedLocales: kSupportedLocales,
         locale: Locale(languageStore.selectedLanguage),
         theme: theme,
-        home: LandingScreen(),
+        routerConfig: router,
       ),
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:teachblox/academy/routing/routes.dart';
 import 'package:teachblox/academy/screens/landing_screen/landing_header/utils.dart';
 
 import 'package:teachblox/l10n/locals.dart';
@@ -34,11 +36,17 @@ class LandingHeaderDesktop extends StatelessWidget
                 LanguageSelector(),
                 Button(
                   variant: ButtonVariant.ghost,
-                  onPressed: () {},
+                  onPressed: () {
+                    context.go(loginScreenRoute);
+                  },
                   text: locale.login,
                 ),
                 SizedBox(width: 8.0),
-                Button(onPressed: () {}, text: locale.register),
+                Button(
+                    onPressed: () {
+                      context.go(registerScreenRoute);
+                    },
+                    text: locale.register),
               ],
             )
           ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teachblox/academy/screens/landing_screen/about_platform/about_platform.dart';
+import 'package:teachblox/academy/screens/landing_screen/courses/courses.dart';
 import 'package:teachblox/academy/screens/landing_screen/how_it_works/how_it_works.dart';
 import 'package:teachblox/academy/screens/landing_screen/landing_header/landing_header.dart';
 import 'package:teachblox/academy/screens/landing_screen/landing_header/landing_header_drawer.dart';
@@ -20,6 +21,7 @@ class LandingScreen extends StatelessWidget {
           Statistic(),
           HowItWorks(),
           WhyChooseUs(),
+          Courses(),
         ],
       ),
     );
