@@ -11,6 +11,19 @@
   "logout": "Logout",
   "getStarted": "Get Started",
   "startLearning": "Start Learning",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "I forgot my password",
+  "log_in": "Log In",
+  "sign_up": "Sign Up",
+  "continueWithButtonText": "Continue with {provider}",
+  "@continueWithButtonText": {
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
   "landingScreen_title": "Learn your way with",
   "landingScreen_titleDescription": "Start with introductory modules and choose your specialization in Web3 and programming",
   "landingScreen_statistic_developers": "of developers worldwide work in Web3 today",
@@ -48,5 +61,7 @@
   "landingScreen_courses_block3_title": "Telegram Web Apps & TWA Apps",
   "landingScreen_courses_block3_description": "Build interactive Telegram Web Apps and decentralized apps with TWA",
   "landingScreen_courses_block4_title": "Smart contracts development",
-  "landingScreen_courses_block4_description": "Create secure smart contracts to power innovative blockchain solutions"
+  "landingScreen_courses_block4_description": "Create secure smart contracts to power innovative blockchain solutions",
+  "registerScreen_have_account_link_text": "Already have an account?",
+  "loginScreen_do_not_have_account_link_text": "Don’t have an account?"
 }
