@@ -10,6 +10,7 @@ class Button extends StatelessWidget {
   final TextStyle textStyle;
   final EdgeInsetsGeometry padding;
   final Widget? leading;
+  final bool fullWidth;
 
   const Button({
     super.key,
@@ -18,6 +19,7 @@ class Button extends StatelessWidget {
     this.leading,
     this.variant = ButtonVariant.primary,
     this.textStyle = const TextStyle(),
+    this.fullWidth = false,
     this.padding = const EdgeInsets.symmetric(
       vertical: kPaddingVertical,
       horizontal: kPaddingHorizontal,
@@ -41,7 +43,8 @@ class Button extends StatelessWidget {
         child: Padding(
           padding: padding,
           child: Row(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               leading ?? const SizedBox(),
               Text(
@@ -77,6 +80,32 @@ class Button extends StatelessWidget {
     );
   }
 
+  Widget _buildLinkButton(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          bottom: BorderSide(
+            color: kMainOrange,
+            width: 1.5,
+          ),
+        ),
+      ),
+      child: TextButton(
+        onPressed: onPressed,
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.symmetric(horizontal: 0),
+          overlayColor: Colors.transparent,
+        ),
+        child: Text(
+          text,
+          style: kLabelMedium.copyWith(
+            color: kMainOrange,
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     switch (variant) {
@@ -84,6 +113,8 @@ class Button extends StatelessWidget {
         return _buildPrimaryButton(context);
       case ButtonVariant.ghost:
         return _buildGhostButton(context);
+      case ButtonVariant.link:
+        return _buildLinkButton(context);
     }
   }
 }
@@ -91,6 +122,7 @@ class Button extends StatelessWidget {
 enum ButtonVariant {
   primary,
   ghost,
+  link,
 }
 
 const kPaddingHorizontal = 16.0;
