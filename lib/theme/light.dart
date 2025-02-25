@@ -15,6 +15,7 @@ ThemeData lightTheme = ThemeData.light().copyWith(
     headlineSmall: kHeadlineSmall.copyWith(color: kTextColor),
     labelLarge: kLabelLarge.copyWith(color: kTextColor),
     labelMedium: kLabelMedium.copyWith(color: kTextColor),
+    labelSmall: kLabelSmall.copyWith(color: kTextColor),
     bodyLarge: kLabelMedium.copyWith(color: kTextColor),
     bodyMedium: kBodyMedium.copyWith(color: kTextColor),
     displayLarge: kDisplayLarge.copyWith(color: kTextColor),

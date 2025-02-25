@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:teachblox/academy/routing/routes.dart';
 import 'package:teachblox/assets/svg_image.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/utils.dart';
@@ -18,7 +20,7 @@ class GetStartedButton extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10.0),
           child: SvgPicture.asset(SvgImage.getStarted),
         ),
-        onPressed: () => print('!'),
+        onPressed: () => context.go(registerScreenRoute),
         text: locale.getStarted,
         padding: EdgeInsets.only(
           top: 6.0,

@@ -85,6 +85,32 @@ TextStyle? getDisplayMedium(BuildContext context) {
   }
 }
 
+TextStyle? getLabelMedium(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.labelMedium;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.labelMedium;
+  } else {
+    return textTheme.labelMedium;
+  }
+}
+
+TextStyle? getLabelSmall(BuildContext context) {
+  final screenWidth = MediaQuery.sizeOf(context).width;
+  final textTheme = Theme.of(context).textTheme;
+
+  if (screenWidth < kMobileWidth) {
+    return textTheme.labelSmall;
+  } else if (screenWidth < kTabletWidth) {
+    return textTheme.labelSmall;
+  } else {
+    return textTheme.labelSmall;
+  }
+}
+
 double? getButtonWidth(BuildContext context) {
   final screenWidth = MediaQuery.sizeOf(context).width;
 

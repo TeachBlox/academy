@@ -30,6 +30,11 @@ final kLabelMedium = GoogleFonts.poppins(
   height: 1.4,
 );
 
+final kLabelSmall = GoogleFonts.poppins(
+  fontWeight: FontWeight.w400,
+  fontSize: 14.0,
+);
+
 final kBodyMedium = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   fontSize: 24.0,

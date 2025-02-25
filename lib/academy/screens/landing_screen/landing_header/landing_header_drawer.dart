@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:teachblox/academy/routing/routes.dart';
 import 'package:teachblox/academy/screens/landing_screen/landing_header/utils.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
@@ -50,7 +52,7 @@ class LandingHeaderDrawer extends StatelessWidget {
                 text: locale.login,
                 padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
                 onPressed: () {
-                  print('!');
+                  context.go(loginScreenRoute);
                 },
               ),
             ),
@@ -61,7 +63,7 @@ class LandingHeaderDrawer extends StatelessWidget {
                 text: locale.register,
                 padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
                 onPressed: () {
-                  print('!');
+                  context.go(registerScreenRoute);
                 },
               ),
             ),
