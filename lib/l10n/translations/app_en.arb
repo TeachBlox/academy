@@ -13,6 +13,7 @@
   "startLearning": "Start Learning",
   "email": "Email",
   "password": "Password",
+  "confirmPassword": "Confirm Password",
   "forgotPassword": "I forgot my password",
   "log_in": "Log In",
   "sign_up": "Sign Up",
@@ -24,6 +25,11 @@
       }
     }
   },
+  "fullName": "Full Name",
+  "createAccount": "Create Account",
+  "and": "and",
+  "termsOfService": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
   "landingScreen_title": "Learn your way with",
   "landingScreen_titleDescription": "Start with introductory modules and choose your specialization in Web3 and programming",
   "landingScreen_statistic_developers": "of developers worldwide work in Web3 today",

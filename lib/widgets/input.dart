@@ -6,21 +6,30 @@ class Input extends StatelessWidget {
   final String hint;
   final double width;
   final bool isPassword;
+  final String initialValue;
+  final void Function(String)? onChanged;
 
   const Input({
     super.key,
     this.hint = '',
     this.width = double.infinity,
     this.isPassword = false,
+    this.initialValue = '',
+    this.onChanged,
   });
 
   @override
   Widget build(BuildContext context) {
+    final TextEditingController controller =
+        TextEditingController(text: initialValue);
+    controller.addListener(() => onChanged?.call(controller.text));
+
     return SizedBox(
       width: width,
       child: TextField(
         obscureText: isPassword,
         style: getLabelMedium(context),
+        controller: controller,
         decoration: InputDecoration(
           hintText: hint,
           hintStyle: TextStyle(color: kGreyMediumLight),

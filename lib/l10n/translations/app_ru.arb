@@ -13,10 +13,16 @@
   "startLearning": "Начать обучение",
   "email": "Электронная почта",
   "password": "Пароль",
+  "confirmPassword": "Повторите пароль",
   "forgotPassword": "Я забыл свой пароль",
   "log_in": "Войти",
   "sign_up": "Регистрация",
   "continueWithButtonText": "Прожолжить с {provider}",
+  "fullName": "Полное имя",
+  "createAccount": "Создать аккаунт",
+  "and": "и",
+  "termsOfService": "Условия использования",
+  "privacyPolicy": "Пололитика конфиденциальности",
   "landingScreen_title": "Учись как тебе удобно с",
   "landingScreen_titleDescription": "Начни с вводных модулей и выбери свою специализацию в Web3 и программировании",
   "landingScreen_statistic_developers": "разработчиков по всему миру работают в Web3 сегодня",
@@ -54,5 +60,7 @@
   "landingScreen_courses_block3_title": "Telegram Web Apps и TWA-приложения",
   "landingScreen_courses_block3_description": "Создавайте интерактивные Telegram Web Apps и децентрализованные приложения с TWA",
   "landingScreen_courses_block4_title": "Разработка смарт-контрактов",
-  "landingScreen_courses_block4_description": "Создавайте безопасные смарт-контракты для реализации инновационных блокчейн-решений"
+  "landingScreen_courses_block4_description": "Создавайте безопасные смарт-контракты для реализации инновационных блокчейн-решений",
+  "registerScreen_have_account_link_text": "Уже есть аккаунт?",
+  "loginScreen_do_not_have_account_link_text": "Все еще нет аккаунта?"
 }

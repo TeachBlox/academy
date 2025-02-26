@@ -3,6 +3,7 @@ import 'package:teachblox/academy/routing/routes.dart';
 import 'package:teachblox/academy/screens/landing_screen/landing_screen.dart';
 import 'package:teachblox/academy/screens/login_screen/login_screen.dart';
 import 'package:teachblox/academy/screens/register_screen/register_screen.dart';
+import 'package:teachblox/academy/screens/register_screen/register_password_screen.dart';
 
 final router = GoRouter(
   initialLocation: landingScreenRoute,
@@ -18,6 +19,10 @@ final router = GoRouter(
     GoRoute(
       path: registerScreenRoute,
       builder: (context, state) => RegisterScreen(),
+    ),
+    GoRoute(
+      path: registerScreenPasswordRoute,
+      builder: (context, state) => RegisterPasswordScreen(),
     ),
   ],
 );
