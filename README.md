@@ -1,5 +1,9 @@
 ![logo-black](https://github.com/user-attachments/assets/ca92bd16-847c-4f86-91fd-82e841a702f0)
 
+![GitHub stars](https://img.shields.io/github/stars/TeachBlox/academy?style=social)
+![GitHub forks](https://img.shields.io/github/forks/TeachBlox/academy?style=social)
+![GitHub license](https://img.shields.io/github/license/TeachBlox/academy)
+
 ### **AI-Powered Web3 Learning Platform**
 
 Welcome to **TeachBlox Academy** – an **autonomous, AI-driven** learning platform designed to revolutionize **Web3 and AI education**. We integrate **blockchain certification, gamification, and adaptive AI-generated courses** to provide a **fully personalized** and **future-proof** learning experience.
