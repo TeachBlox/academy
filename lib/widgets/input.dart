@@ -4,15 +4,22 @@ import 'package:teachblox/utils.dart';
 
 class Input extends StatelessWidget {
   final String hint;
-  final double? width;
+  final double width;
+  final bool isPassword;
 
-  const Input({super.key, this.hint = '', this.width = double.infinity});
+  const Input({
+    super.key,
+    this.hint = '',
+    this.width = double.infinity,
+    this.isPassword = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: width,
       child: TextField(
+        obscureText: isPassword,
         style: getLabelMedium(context),
         decoration: InputDecoration(
           hintText: hint,
