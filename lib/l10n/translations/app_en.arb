@@ -1,4 +1,6 @@
 {
+  "comingSoon_title": "✨ TeachBlox is Coming Soon! \uD83D\uDE80",
+  "comingSoon_description": "We’re working hard to bring you the next-gen AI-powered learning platform! ⚡\nOur team is building something revolutionary — a fully autonomous, personalized education experience powered by Web3 and AI.\n\n\uD83D\uDD25 Stay tuned for updates and get ready to learn, grow, and innovate like never before!",
   "companyTitle": "TeachBlox",
   "link_aboutPlatform": "About Platform",
   "link_courses": "Courses",
@@ -13,6 +15,7 @@
   "startLearning": "Start Learning",
   "email": "Email",
   "password": "Password",
+  "confirmPassword": "Confirm Password",
   "forgotPassword": "I forgot my password",
   "log_in": "Log In",
   "sign_up": "Sign Up",
@@ -24,6 +27,11 @@
       }
     }
   },
+  "fullName": "Full Name",
+  "createAccount": "Create Account",
+  "and": "and",
+  "termsOfService": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
   "landingScreen_title": "Learn your way with",
   "landingScreen_titleDescription": "Start with introductory modules and choose your specialization in Web3 and programming",
   "landingScreen_statistic_developers": "of developers worldwide work in Web3 today",

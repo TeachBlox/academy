@@ -3,7 +3,23 @@
     {
       "target": "academy",
       "public": "build/academy_web",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
     }
-  ]
+  ],
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "teachblox",
+          "configurations": {
+            "web": "1:574026908420:web:61b767c32770aead21c651"
+          }
+        }
+      }
+    }
+  }
 }

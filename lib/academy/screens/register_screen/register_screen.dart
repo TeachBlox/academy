@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:go_router/go_router.dart';
 import 'package:teachblox/academy/routing/routes.dart';
+import 'package:teachblox/academy/store/registration_store/registration_store.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/utils.dart';
+import 'package:teachblox/validator.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
 import 'package:teachblox/widgets/input.dart';
 import 'package:teachblox/widgets/layout/adaptive_padding.dart';
@@ -54,12 +57,21 @@ class RegisterScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 12.0),
-                Input(),
+                Input(
+                  initialValue: registrationStore.email,
+                  onChanged: registrationStore.setEmail,
+                ),
                 SizedBox(height: 32.0),
-                Button(
-                  fullWidth: true,
-                  onPressed: () {},
-                  text: locale.continueWithButtonText(locale.email),
+                Observer(
+                  builder: (_) => Button(
+                    fullWidth: true,
+                    onPressed: () {
+                      if (Validator.isValidEmail(registrationStore.email)) {
+                        context.go(registerScreenPasswordRoute);
+                      }
+                    },
+                    text: locale.continueWithButtonText(locale.email),
+                  ),
                 ),
               ],
             ),
