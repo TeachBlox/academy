@@ -5,6 +5,7 @@ import 'package:teachblox/academy/routing/routes.dart';
 import 'package:teachblox/academy/store/registration_store/registration_store.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/utils.dart';
+import 'package:teachblox/validator.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
 import 'package:teachblox/widgets/input.dart';
 import 'package:teachblox/widgets/layout/adaptive_padding.dart';
@@ -16,13 +17,6 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final locale = getLocale(context);
-
-    bool isValidEmail(String email) {
-      final RegExp emailRegex = RegExp(
-        r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
-      );
-      return emailRegex.hasMatch(email);
-    }
 
     return Scaffold(
       appBar: MainAppBar(),
@@ -72,7 +66,7 @@ class RegisterScreen extends StatelessWidget {
                   builder: (_) => Button(
                     fullWidth: true,
                     onPressed: () {
-                      if (isValidEmail(registrationStore.email)) {
+                      if (Validator.isValidEmail(registrationStore.email)) {
                         context.go(registerScreenPasswordRoute);
                       }
                     },

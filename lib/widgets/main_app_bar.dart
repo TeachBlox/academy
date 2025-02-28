@@ -4,7 +4,9 @@ import 'package:teachblox/utils.dart';
 import 'package:teachblox/widgets/common/company_logo.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MainAppBar({super.key});
+  final List<Widget> actions;
+
+  const MainAppBar({super.key, this.actions = const []});
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +18,17 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
           tablet: 48.0,
           desktop: 96.0,
         ),
-
         vertical: 24.0,
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CompanyLogo(),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: actions,
+          ),
         ],
       ),
     );

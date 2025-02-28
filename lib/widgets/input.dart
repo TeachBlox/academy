@@ -22,7 +22,6 @@ class Input extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextEditingController controller =
         TextEditingController(text: initialValue);
-    controller.addListener(() => onChanged?.call(controller.text));
 
     return SizedBox(
       width: width,
@@ -30,6 +29,7 @@ class Input extends StatelessWidget {
         obscureText: isPassword,
         style: getLabelMedium(context),
         controller: controller,
+        onChanged: onChanged,
         decoration: InputDecoration(
           hintText: hint,
           hintStyle: TextStyle(color: kGreyMediumLight),

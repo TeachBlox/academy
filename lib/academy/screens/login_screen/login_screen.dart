@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:teachblox/academy/routing/routes.dart';
+import 'package:teachblox/academy/store/auth_store/auth_store.dart';
+import 'package:teachblox/academy/store/login_store/login_store.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/utils.dart';
+import 'package:teachblox/validator.dart';
 import 'package:teachblox/widgets/buttons/button.dart';
 import 'package:teachblox/widgets/input.dart';
 import 'package:teachblox/widgets/layout/adaptive_padding.dart';
@@ -14,6 +17,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final locale = getLocale(context);
+    final loginStore = LoginStore();
 
     return Scaffold(
       appBar: MainAppBar(),
@@ -54,7 +58,10 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 12.0),
-                Input(),
+                Input(
+                  onChanged: loginStore.setEmail,
+                  initialValue: loginStore.email,
+                ),
                 SizedBox(height: 24.0),
                 Align(
                   alignment: Alignment.centerLeft,
@@ -64,11 +71,23 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 12.0),
-                Input(isPassword: true),
+                Input(
+                  isPassword: true,
+                  onChanged: loginStore.setPassword,
+                  initialValue: loginStore.password,
+                ),
                 SizedBox(height: 32.0),
                 Button(
                   fullWidth: true,
-                  onPressed: () {},
+                  onPressed: () {
+                    if (Validator.isValidEmail(loginStore.email) &&
+                        loginStore.password.isNotEmpty) {
+                      authStore.signIn(
+                        loginStore.email,
+                        loginStore.password,
+                      );
+                    }
+                  },
                   text: locale.log_in,
                 ),
               ],

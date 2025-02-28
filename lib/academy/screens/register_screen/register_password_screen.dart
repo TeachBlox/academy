@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:teachblox/academy/store/auth_store/auth_store.dart';
 import 'package:teachblox/academy/store/registration_store/registration_store.dart';
 import 'package:teachblox/l10n/locals.dart';
 import 'package:teachblox/utils.dart';
@@ -70,10 +72,20 @@ class RegisterPasswordScreen extends StatelessWidget {
                   onChanged: registrationStore.setConfirmPassword,
                 ),
                 SizedBox(height: 32.0),
-                Button(
-                  fullWidth: true,
-                  onPressed: () {},
-                  text: locale.createAccount,
+                Observer(
+                  builder: (_) => Button(
+                    fullWidth: true,
+                    onPressed: () {
+                      if (registrationStore.password ==
+                          registrationStore.confirmPassword) {
+                        authStore.signUp(
+                          registrationStore.email,
+                          registrationStore.password,
+                        );
+                      }
+                    },
+                    text: locale.createAccount,
+                  ),
                 ),
               ],
             ),
